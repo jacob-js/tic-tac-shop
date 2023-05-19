@@ -25,6 +25,12 @@ function Login() {
                         <Form.Item>
                             <Button type='primary' block size='large'>Login</Button>
                         </Form.Item>
+                        <Form.Item>
+                            <div className="flex justify-between">
+                                <Button type='link'>Reset password</Button>
+                                <Button type='link'>Register</Button>
+                            </div>
+                        </Form.Item>
                     </Form>
                 </div>
             </div>
