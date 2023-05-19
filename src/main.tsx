@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import 'antd/dist/reset.css';
 import './index.css'
 import { ConfigProvider } from 'antd';
-import { Login } from './pages';
+import { Login, Signup } from './pages';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -16,7 +16,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         }
       }}
     >
-      <Login />
+      {/* <Login /> */}
+      <Signup />
     </ConfigProvider>
   </React.StrictMode>,
 )
