@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { EmailPrompt, Login, Signup } from "./pages";
+import { EmailPrompt, Login, OnTimeCode, Signup } from "./pages";
 
 export default createBrowserRouter([
     {
@@ -16,6 +16,10 @@ export default createBrowserRouter([
             {
                 path: 'email-prompt',
                 element: <EmailPrompt />
+            },
+            {
+                path: 'otp',
+                element: <OnTimeCode />
             }
         ]
     }

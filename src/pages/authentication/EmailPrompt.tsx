@@ -14,7 +14,7 @@ function EmailPrompt() {
                 <Input placeholder='ex: johndoe@gmail.com' size='large' />
             </Form.Item>
             <Form.Item>
-                <Button type='primary' block size='large'>Submit</Button>
+                <Button type='primary' block size='large' onClick={() =>navigate('../otp', {replace: true})}>Submit</Button>
             </Form.Item>
             <Form.Item>
                 <div className="flex justify-between">
