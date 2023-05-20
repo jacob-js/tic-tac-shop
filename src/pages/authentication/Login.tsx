@@ -1,7 +1,10 @@
 import { Input, Form, Button } from 'antd';
 import { AuthWrapper } from '../../components';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
+    const navigate = useNavigate();
+
   return (
     <AuthWrapper title='Welcome' subtitle='Please login to your account to continue'>
         <Form
@@ -19,7 +22,7 @@ function Login() {
             <Form.Item>
                 <div className="flex justify-between">
                     <Button type='link'>Reset password</Button>
-                    <Button type='link'>Register</Button>
+                    <Button type='link' onClick={() =>navigate('../signup')}>Register</Button>
                 </div>
             </Form.Item>
         </Form>

@@ -1,7 +1,10 @@
 import { Input, Form, Button } from 'antd';
 import { AuthWrapper } from '../../components';
+import { useNavigate } from 'react-router-dom';
 
 function Signup() {
+    const navigate = useNavigate();
+
   return (
     <AuthWrapper title='Register' subtitle='Please create an account to continue'>
         <Form
@@ -23,7 +26,7 @@ function Signup() {
                 <Button type='primary' block size='large'>Login</Button>
             </Form.Item>
             <Form.Item>
-                <Button type='link'>Back to login</Button>
+                <Button type='link' onClick={() =>navigate('../login', {replace: true})}>Back to login</Button>
             </Form.Item>
         </Form>
     </AuthWrapper>
