@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Login, Signup } from "./pages";
+import { EmailPrompt, Login, Signup } from "./pages";
 
 export default createBrowserRouter([
     {
@@ -12,6 +12,10 @@ export default createBrowserRouter([
             {
                 path: 'signup',
                 element: <Signup />
+            },
+            {
+                path: 'email-prompt',
+                element: <EmailPrompt />
             }
         ]
     }

@@ -21,7 +21,7 @@ function Login() {
             </Form.Item>
             <Form.Item>
                 <div className="flex justify-between">
-                    <Button type='link'>Reset password</Button>
+                    <Button type='link' onClick={() =>navigate('../email-prompt')}>Reset password</Button>
                     <Button type='link' onClick={() =>navigate('../signup')}>Register</Button>
                 </div>
             </Form.Item>
