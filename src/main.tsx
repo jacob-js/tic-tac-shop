@@ -11,9 +11,9 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <ConfigProvider
       theme={{
         token: {
-          colorPrimary: "#dd4900",
+          colorPrimary: "#15803d",
           colorLink: "#8d8d8d",
-          colorLinkHover: "#dd4900"
+          colorLinkHover: "#15803d"
         }
       }}
     >
