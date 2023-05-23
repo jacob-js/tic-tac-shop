@@ -1,5 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { EmailPrompt, Login, OnTimeCode, Signup } from "./pages";
+import Dashboard from "./pages/Dashboard";
+import Header from "./components/Header";
 
 export default createBrowserRouter([
     {
@@ -20,6 +22,16 @@ export default createBrowserRouter([
             {
                 path: 'otp',
                 element: <OnTimeCode />
+            }
+        ]
+    },
+    {
+        path: '/',
+        element: <Header />,
+        children: [
+            {
+                index: true,
+                element: <Dashboard />
             }
         ]
     }
